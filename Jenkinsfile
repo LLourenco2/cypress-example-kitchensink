@@ -46,7 +46,7 @@ steps {
                     sshTransfer(
                         cleanRemote: false, 
                         excludes: '', 
-                        execCommand: 'echo ‘Replace me by your build/install scripts’', 
+                        execCommand: 'echo ‘npm install’', 
                         execTimeout: 120000, 
                         flatten: false, 
                         makeEmptyDirs: false, 
