@@ -46,7 +46,7 @@ steps {
                     sshTransfer(
                         cleanRemote: false, 
                         excludes: '', 
-                        execCommand: 'echo ‘npm install’', 
+                        execCommand: 'npm install', 
                         execTimeout: 120000, 
                         flatten: false, 
                         makeEmptyDirs: false, 
