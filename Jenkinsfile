@@ -46,7 +46,10 @@ steps {
                     sshTransfer(
                         cleanRemote: false, 
                         excludes: '', 
-                        execCommand: 'npm install & npm start', 
+                        execCommand: '''
+                        cd /usr/share/nginx/html
+                        npm ci
+                        pm2 restart todo''',
                         execTimeout: 120000, 
                         flatten: false, 
                         makeEmptyDirs: false, 
