@@ -45,7 +45,7 @@ steps {
                 transfers: [
                     sshTransfer(
                         cleanRemote: false, 
-                        excludes: '', 
+                        excludes: 'node_modules/,cypress/,**/*.yml',
                         execCommand: '''
                         cd /usr/share/nginx/html
                         npm ci
