@@ -43,7 +43,7 @@ echo 'Building/Deploying app to staging'
 }
 stage('Run automated tests') {
 steps {
-echo 'Running automated tests'
+echo 'Running automated'
 }
 }
 stage('Perform manual testing') {
